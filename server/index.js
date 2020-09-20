@@ -13,7 +13,7 @@ app.use('/tweet', tweet)
 // production
 if(process.env.NODE_ENV === 'production'){
     //static folder
-    app.use(express.static(__dirname, + '/public/'))
+    app.use(express.static(__dirname + '/public/'))
 
     // SPA handler
     app.get(/.*/, (req, res) => {
